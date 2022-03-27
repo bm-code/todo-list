@@ -1,0 +1,11 @@
+li{
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+li.completed{
+    background-color: #dadada;
+    color: gray;
+    text-decoration: line-through;
+}
