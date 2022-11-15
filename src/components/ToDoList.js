@@ -25,7 +25,7 @@ export default function ToDoList({ toDo, setToDoList }) {
                 }
             </ul>
             <div className="completed mt-5">
-                <h3>Tareas completadas</h3>
+                <h3 className="mb-3">Tareas completadas</h3>
                 <ul className="list-group">
                     {
                         toDo.map(({ title, completed }, index) => {
@@ -34,7 +34,6 @@ export default function ToDoList({ toDo, setToDoList }) {
                             )
                         })
                     }
-
                 </ul>
             </div>
         </div>
