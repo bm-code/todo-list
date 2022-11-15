@@ -5,8 +5,13 @@ export default function Input({ setToDoList }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        setToDoList(currentTodos => [{ title: newTodo, completed: false }, ...currentTodos]);
-        setNewTodo('');
+        if (newTodo === '') {
+            alert('La tarea no puede estar vacía')
+        } else {
+            setToDoList(currentTodos => [{ title: newTodo, completed: false }, ...currentTodos]);
+            setNewTodo('');
+        }
+
     }
 
     return (
